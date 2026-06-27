@@ -10,6 +10,8 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
+    - name: Initialize Gradle Wrapper
+      run: gradle wrapper --gradle-version 7.5
     - name: Build Debug APK
       run: chmod +x gradlew && ./gradlew assembleDebug
     - name: Upload APK Artifact
