@@ -49,7 +49,7 @@ class QuranAdapter(private val ayahs: List<Ayah>) : RecyclerView.Adapter<QuranAd
         val tvAyahNumber: TextView = view.findViewById(R.id.tvAyahNumber)
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.id.item_page, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_page, parent, false)
         return ViewHolder(view)
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
